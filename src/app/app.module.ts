@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PainelComponent } from './painel/painel.component';
+import { TopoComponent } from './topo/topo.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopoComponent,
+    PainelComponent
   ],
   imports: [
     BrowserModule
