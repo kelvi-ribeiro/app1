@@ -1,7 +1,10 @@
 import{Component} from '@angular/core/'
 
 @Component({
-    selector: 'app-topo',
+    selector: 'app-topo', // Método para definir o seletor da aplicação, que será instanciado na view
+    //seletor :'[app-topo]', Outro método para definir o seletor, dessa vez, como atributo.
+   //seletor :'.app-topo' Outro método para definir o seletor, dessa vez, como classe. 
+    
     
     //template:'<p>Esse é o componente topo</p>' ESSE É OUTRO JEITO DE ASSOCIOAR O TEMPLATE, MÉTODO INLINE, SEM QUEBRA DE LINHA
 /*template:`<p>Esse
