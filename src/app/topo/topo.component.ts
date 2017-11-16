@@ -8,7 +8,12 @@ import{Component} from '@angular/core/'
 é o
 Componente
 Topo</p>` // Esse é outro método, usando crases(shift+`) podendo-se ter quebras de linha, facilitando a visualização do código*/
-templateUrl: './topo.component.html'  //ESSE É UM JEITO DE ASSOCIAR O TEMPLATE AO COMPONENT, COM ARQUIVO EXTERNO 
+templateUrl: './topo.component.html' , //ESSE É UM JEITO DE ASSOCIAR O TEMPLATE AO COMPONENT, COM ARQUIVO EXTERNO 
+styleUrls:['./topo.component.css']
+//styles:['.exemplo {color:red}'] //Esse é um jeito de associar o estilo ao componente.
+/*styles:[`.exemplo 
+
+{color:red}`]   Esse é outro jeito de associar, usando a crase(backtits) permitindo quebra de linha*/
 })
    export class TopoComponent {
    }
