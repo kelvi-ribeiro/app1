@@ -19,4 +19,5 @@ styleUrls:['./topo.component.css']
 {color:red}`]   Esse é outro jeito de associar, usando a crase(backtits) permitindo quebra de linha*/
 })
    export class TopoComponent {
+       public titulo:string = 'Apredendo Inglês'
    }
