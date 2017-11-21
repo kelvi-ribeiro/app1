@@ -30,7 +30,20 @@ export class PainelComponent implements OnInit {
   }
 
   public verificarResposta():void{
-    console.log('Verificar respsota:',this.resposta)
+    if(this.rodadaFrase.frasePtBr==this.resposta){
+      alert('A tradução está certa')
+
+       //Trocar pergunta da rodada
+    this.rodada++
+    //Atualiza o objeto rodadaFrase
+   
+    this.rodadaFrase = this.frases[this.rodada]
+    console.log(this.rodadaFrase)
+    
+    }else {
+      alert('A tradução está errada')
+    }
+   
   }
 
 }
