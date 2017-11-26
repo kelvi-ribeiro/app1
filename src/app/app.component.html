@@ -5,11 +5,23 @@
 
 </div>
 <ng-template #fimDeJogo>
-    <div style="margin-top:50px;" class="container">
+    <div *ngIf="tipoEncerramento=='derrota';else fimDejogoVitoria" style="margin-top:50px;" class="container">
    <div class="row">
        <div class="col">
            <h3 style="color:red;">Fim de jogo, infelizmente você perdeu :S</h3>
        </div>
    </div>
 </div>
+
+</ng-template>
+
+<ng-template #fimDejogoVitoria>
+        <div  style="margin-top:50px;" class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 style="color:blue;">Fim de jogo,  você Ganhou :D</h3>
+                    </div>
+                </div>
+             </div>
+
 </ng-template>
