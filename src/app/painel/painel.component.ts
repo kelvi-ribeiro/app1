@@ -23,6 +23,7 @@ export class PainelComponent implements OnInit {
   public tentativas:number = 3
   constructor() { 
     this.atualizaRodada()
+  
     }
 
   ngOnInit() {
@@ -35,12 +36,18 @@ export class PainelComponent implements OnInit {
 
   public verificarResposta():void{
     if(this.rodadaFrase.frasePtBr==this.resposta){
-      alert('A tradução está certa')
+      
 
        //Trocar pergunta da rodada
     this.rodada++
     //Atualizando o progresso
     this.progresso = this.progresso + (100/this.frases.length)
+
+    //
+    if(this.rodada===FRASES.length){
+      alert('Colcuiu as traduções com sucesso!')
+    }
+    
     
     //Atualiza o objeto rodadaFrase
    
