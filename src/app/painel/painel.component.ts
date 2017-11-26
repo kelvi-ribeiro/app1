@@ -41,7 +41,7 @@ export class PainelComponent implements OnInit {
     this.rodada++
     //Atualizando o progresso
     this.progresso = this.progresso + (100/this.frases.length)
-    console.log(this.progresso)
+    
     //Atualiza o objeto rodadaFrase
    
     this.atualizaRodada()
