@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import {Coracao} from '../shared/coracao.model'
+
 
 @Component({
   selector: 'app-tentativas',
@@ -7,8 +8,8 @@ import {Coracao} from '../shared/coracao.model'
   styleUrls: ['./tentativas.component.css']
 })
 export class TentativasComponent implements OnInit {
-  public coracaoVazio:string = '/assets/coracao_vazio.png'
-  public coracaoCheio:string = '/assets/coracao_cheio.png'
+  
+  @Input() public tentativas:number
 
   public coracoes:Coracao[] = [
     new Coracao (true), //Só precisamos passar o parâmetro do atributo cheio, pois as outras duas já vem valor default
@@ -19,10 +20,13 @@ export class TentativasComponent implements OnInit {
   
 
   constructor() {
-    console.log(this.coracaoCheio)
+    console.log(this.coracoes)
+    
    }
+   
 
   ngOnInit() {
+    console.log('tentativas recebidas do painel:',this.tentativas)
   }
 
 }
