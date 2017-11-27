@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Pré-requisitos: Você dever ter o NodeJs na máquina e através do npm que já vem com a instalação do Node, baixar o "npm install –g @anglar/cli" sem aspas
 
-Então se você já tem esses pré-requisitos é só você clonar esse repositório e logo após isso utilizar o comando "npm install" para baixar as dependências do projeto que está no arquvi packge.json.
+Então se você já tem esses pré-requisitos é só você clonar esse repositório e logo após isso utilizar o comando "npm install" sem aspas para baixar as dependências do projeto que está no arquvivo packge.json.
 
 
 
