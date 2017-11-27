@@ -1,6 +1,14 @@
-# App1
+# Aplicação para tradução
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+
+## Sobre o projeto e como você faz para testa-lo
+
+Pré-requisitos: Você dever ter o NodeJs na máquina e através do npm que já vem com a instalação do Node, baixar o "npm install –g @anglar/cli" sem aspas
+
+Então se você já tem esses pré-requisitos é só você clonar esse repositório e logo após isso utilizar o comando "npm install" para baixar as dependências do projeto que está no arquvi packge.json.
+
+
 
 ## Development server
 
